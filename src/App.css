@@ -21,6 +21,18 @@
   right: 1%;
   top: 1%;
 }
+ 
+.cart-count {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 1;
+    background-color: darkblue;
+    padding: 4px;
+    color: #fff;
+    border-radius: 10px;
+    width: 32px;
+}
 
 .btn-wrapper button {
   background-color: red;
@@ -28,8 +40,14 @@
   padding: 10px;
   border-radius: 4px;
   color: #fff;
-  box-shadow: 10px 5px 5px red;
+  
   cursor: pointer;
+}
+
+.remove-cart button {
+  background-color: coral;
+  
+  margin-top: 5px;
 }
 .img-wrapper img {
 width: 100px;

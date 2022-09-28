@@ -1,11 +1,10 @@
 import React from 'react'
 
-function Home() {
+function Home(props) {
+  console.log("props",props);
   return (
     <div>
-    <div className='add-to-cart'>
-    <img src='https://png.pngtree.com/element_our/md/20180620/md_5b29c1dab1cf4.jpg' alt='server issue'/>
-    </div>
+    
     <h1>Home component</h1>
     <div className='cart-wrapper'>
      <div className='img-wrapper item' >
@@ -22,8 +21,16 @@ function Home() {
      </div>
 
      <div className='btn-wrapper item' >
-     <button>Add to cart</button>
-    
+     <button onClick={()=>
+      props.addToCartHandler({prize:1000,name:'i-phone 11'})}
+     
+     >Add to cart</button>
+<div className='remove-cart'>
+     <button onClick={()=>
+      props.removeToCartHandler()}
+     
+     >Removed to cart</button>
+     </div>
      </div>
 
     </div>
